@@ -300,20 +300,26 @@
     </div>
   </section>
 
-  <section id="zayavka">
-    <h2>Оставьте заявку</h2>
-    <form>
-      <input type="text" placeholder="Ваше имя" required />
-      <input type="tel" placeholder="Телефон" required />
-      <select>
-        <option>Выберите тип кредита</option>
-        <option>Потребительский</option>
-        <option>Бизнес-кредит</option>
-        <option>Рефинансирование</option>
-      </select>
-      <button class="btn" type="submit">Отправить</button>
-    </form>
-  </section>
+ <section id="zayavka">
+  <h2>Оставьте заявку</h2>
+  <form action="https://getform.io/f/awnyqmmb" method="POST">
+    <!-- Редирект после отправки -->
+    <input type="hidden" name="_redirect" value="https://твой-сайт.kz/thanks.html" />
+
+    <input type="text" name="name" placeholder="Ваше имя" required />
+    <input type="tel" name="phone" placeholder="Телефон" required />
+    
+    <select name="credit_type" required>
+      <option value="">Выберите тип кредита</option>
+      <option>Потребительский</option>
+      <option>Бизнес-кредит</option>
+      <option>Рефинансирование</option>
+    </select>
+    
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+</section>
+
 
   <section style="background: #111; padding: 60px 20px; text-align: center;">
     <h2 style="color: #FFD700; font-size: 28px; margin-bottom: 20px;">Свяжитесь с нами</h2>
@@ -336,3 +342,4 @@
 
 </body>
 </html>
+
